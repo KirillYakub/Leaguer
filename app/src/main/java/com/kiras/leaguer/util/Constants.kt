@@ -11,4 +11,8 @@ object Constants {
 
     const val CHAMPS_DATABASE_NAME = "CHAMPIONS_DATABASE"
     const val CHAMPS_TABLE_NAME = "CHAMPIONS_TABLE"
+
+    const val NOTIFICATIONS_DEEPLINK_URI = "https://kiras.com"
+    const val NOTIFICATIONS_ARG = "name"
+    const val DEFAULT_NOTIFICATION_INTENT_REQUEST_CODE = 1
 }

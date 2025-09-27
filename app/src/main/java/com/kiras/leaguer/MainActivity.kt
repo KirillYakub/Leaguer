@@ -16,9 +16,12 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import androidx.navigation.navDeepLink
 import com.kiras.leaguer.ui.screens.champion_details.ChampionDetailsScreen
 import com.kiras.leaguer.ui.screens.champion_details.components.ChampionDetailsViewModel
 import com.kiras.leaguer.ui.screens.champions_list.ChampionsListScreen
@@ -31,6 +34,8 @@ import com.kiras.leaguer.ui.screens.settings.components.state.SettingsEvent
 import com.kiras.leaguer.ui.theme.LeaguerTheme
 import com.kiras.leaguer.util.ChampionsDetails
 import com.kiras.leaguer.util.ChampionsList
+import com.kiras.leaguer.util.Constants.NOTIFICATIONS_ARG
+import com.kiras.leaguer.util.Constants.NOTIFICATIONS_DEEPLINK_URI
 import com.kiras.leaguer.util.Input
 import com.kiras.leaguer.util.Settings
 import dagger.hilt.android.AndroidEntryPoint
@@ -98,7 +103,14 @@ class MainActivity : ComponentActivity() {
                                 }
                             )
                         }
-                        composable<ChampionsDetails> {
+                        composable<ChampionsDetails>(
+                            deepLinks = listOf(
+                                navDeepLink {
+                                    uriPattern = "$NOTIFICATIONS_DEEPLINK_URI/" +
+                                            "$NOTIFICATIONS_ARG={$NOTIFICATIONS_ARG}"
+                                }
+                            )
+                        ) {
                             val model: ChampionDetailsViewModel = hiltViewModel()
                             model.state?.let { champion ->
                                 ChampionDetailsScreen(
