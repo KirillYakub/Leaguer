@@ -2,10 +2,12 @@
 Read articles about League of Legends game heroes
 <h3>Preview:</h3>
 <p>
-  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_1.jpg" width = "220px" height = "540px"/>
-  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_2.jpg" width = "220px" height = "540px"/>
-  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_3.jpg" width = "220px" height = "540px"/>
-  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_4.jpg" width = "220px" height = "540px"/>
+  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_1.jpg" width = "260px" height = "580px"/>
+  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_2.jpg" width = "260px" height = "580px"/>
+</p>
+<p>
+  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_3.jpg" width = "260px" height = "580px"/>
+  <img src="https://github.com/KirillYakub/Leaguer/blob/e7cfcb30e6838673e9736b250929c6514f9f142a/preview_4.jpg" width = "260px" height = "580px"/>
 </p>
 <h3>Backend:</h3>
 Dagger-Hilt, Ktor, Work Manager, Notifications
